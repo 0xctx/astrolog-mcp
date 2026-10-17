@@ -1,0 +1,16 @@
+# One service: the server on this machine (the image sets ENGINE=astrolog). Build with `docker compose up --build`.
+# The port is published on 127.0.0.1 only. The endpoint has no authentication, so do not publish it
+# on other interfaces without a proxy in front.
+services:
+  astrolog-mcp:
+    build: .
+    image: astrolog-mcp:local
+    init: true
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      ENGINE: astrolog
+      PORT: "3000"
+      ASTROLOG_BIN: /opt/astrolog/astrolog
+      ASTROLOG_MCP_DATA: /app/data/geonames
+    restart: unless-stopped

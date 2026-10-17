@@ -1,0 +1,48 @@
+{
+  "version": "8.00",
+  "url": "https://github.com/CruiserOne/Astrolog/archive/refs/tags/v8.00.tar.gz",
+  "sha256": "14ef68986e00ca46e7a5703f46348ee8be9b474efde56c060a8a9285e60dc838",
+  "bytes": 6059321,
+  "ephem": [
+    {
+      "path": "s136108s.se1",
+      "sha256": "7920df06eacc0559dac129d9660c0752bc2a78065894a3cb1f534db6ad1ea7b2",
+      "bytes": 19489
+    },
+    {
+      "path": "s136199s.se1",
+      "sha256": "78d05a406c409a7a9e02013f0be729b17e014e03d8478fc7f4746423d40730f0",
+      "bytes": 14514
+    },
+    {
+      "path": "s136472s.se1",
+      "sha256": "4e30670ccb4f59d0736ce1e7f4c8eee42da2f8a7e0d5d4fb91069e56e18ea22f",
+      "bytes": 19454
+    },
+    {
+      "path": "s225088s.se1",
+      "sha256": "7dc70b45fdd9762588b79a0cbd258752910aa225313fbe69b9360cb5f969fc77",
+      "bytes": 14546
+    },
+    {
+      "path": "se00010s.se1",
+      "sha256": "5f3f519b219ecbb4dd1dc605b524210d094fe2b3324a4e044067945081aa8904",
+      "bytes": 41296
+    },
+    {
+      "path": "se50000s.se1",
+      "sha256": "f634eb3e522b64c381582f5c360c3371fcf42811dd5c566863df8d67f1ed102a",
+      "bytes": 15748
+    },
+    {
+      "path": "se90377s.se1",
+      "sha256": "6eda36c782ed06ff1bd5e8f55e154562afa47c73bd71ccdb295f54d5ff5456ee",
+      "bytes": 10288
+    },
+    {
+      "path": "se90482s.se1",
+      "sha256": "b87c73e9b3f82bcce0b5016b956170c6b61f9aa9b9917c6c83a3988402146c00",
+      "bytes": 16173
+    }
+  ]
+}

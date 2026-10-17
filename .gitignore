@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.env
+
+# Local tool state and worktrees
+.sysop/
+.claude/
+
+# Astrolog binaries and Swiss Ephemeris data are fetched by the installer, never committed
+/astrolog
+/bin/
+*.exe
+ephe/
+ephem/
+*.se1
+*.sepl
+*.semo
+seas_*
+
+# GeoNames tables are fetched by the installer into ./data, never committed; the sample fixture is
+/data/*
+!/data/fixtures/
+
+# Installer output: the Astrolog install folder and the GeoNames tables
+/.astrolog/
+/data/geonames/

@@ -1,0 +1,7 @@
+.git
+node_modules
+dist
+.astrolog
+data
+test
+*.test.ts

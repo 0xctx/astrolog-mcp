@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "vitest.config.ts", "vitest.integration.config.ts"]
+}

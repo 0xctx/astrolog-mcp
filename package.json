@@ -1,0 +1,60 @@
+{
+  "name": "astrolog-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "MCP server that serves astrology chart data (positions, houses, aspects, transits, composites, harmonics) from Astrolog and the Swiss Ephemeris",
+  "author": "0xctx",
+  "homepage": "https://github.com/0xctx/astrolog-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xctx/astrolog-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xctx/astrolog-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "astrology",
+    "astrolog",
+    "swiss-ephemeris"
+  ],
+  "type": "module",
+  "bin": {
+    "astrolog-mcp": "dist/stdio.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=22.2"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:integration": "node scripts/require-astrolog-bin.mjs && vitest run --config vitest.integration.config.ts",
+    "test:parity": "vitest run src/math.test.ts -t \"parity against the oracle\"",
+    "smoke": "npm run build && node scripts/smoke.mjs",
+    "install:astrolog": "node scripts/install-astrolog.mjs"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/luxon": "^3.7.6",
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "luxon": "^3.7.2",
+    "p-limit": "^7.3.3",
+    "zod": "^4.6.7"
+  }
+}

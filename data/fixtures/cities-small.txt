@@ -1,0 +1,32 @@
+# Hand-written sample rows in the GeoNames cities500 layout, for unit tests only.
+# Coordinates and populations are approximate. This is not GeoNames data; the full table is never committed.
+4726206	Austin	Austin		30.26715	-97.74306	P	PPL	US		TX				961855			America/Chicago	2023-01-01
+4680037	Austin	Austin		43.66663	-92.97463	P	PPL	US		MN				25000			America/Chicago	2023-01-01
+4251586	Springfield	Springfield		39.80172	-89.64371	P	PPL	US		IL				114394			America/Chicago	2023-01-01
+4409896	Springfield	Springfield		37.21533	-93.29824	P	PPL	US		MO				169176			America/Chicago	2023-01-01
+4951788	Springfield	Springfield		42.10148	-72.58981	P	PPL	US		MA				155929			America/New_York	2023-01-01
+5172330	Springfield	Springfield		39.92423	-83.80883	P	PPL	US		OH				58662			America/New_York	2023-01-01
+5128581	New York City	New York City		40.71427	-74.00597	P	PPL	US		NY				8336817			America/New_York	2023-01-01
+5746545	Portland	Portland		45.52345	-122.67621	P	PPL	US		OR				652503			America/Los_Angeles	2023-01-01
+4994358	Portland	Portland		43.66147	-70.25534	P	PPL	US		ME				66194			America/New_York	2023-01-01
+4887398	Chicago	Chicago		41.85003	-87.65005	P	PPL	US		IL				2693976			America/Chicago	2023-01-01
+5419384	Denver	Denver		39.73915	-104.9847	P	PPL	US		CO				715522			America/Denver	2023-01-01
+5520993	El Paso	El Paso		31.75872	-106.48693	P	PPL	US		TX				683080			America/Denver	2023-01-01
+5856195	Honolulu	Honolulu		21.30694	-157.85833	P	PPL	US		HI				350964			Pacific/Honolulu	2023-01-01
+1275004	Kolkata	Kolkata		22.56263	88.36304	P	PPL	IN		29				4486679			Asia/Kolkata	2023-01-01
+2078025	Adelaide	Adelaide		-34.92866	138.59863	P	PPL	AU		SA				1158259			Australia/Adelaide	2023-01-01
+2643743	London	London		51.50853	-0.12574	P	PPL	GB		ENG				8961989			Europe/London	2023-01-01
+5358466	Richmond	Richmond		37.93659	-122.34775	P	PPL	US		CA				110567			America/Los_Angeles	2023-01-01
+6173331	Richmond	Richmond		49.16664	-123.13362	P	PPL	CA		02				190473			America/Vancouver	2023-01-01
+4140963	Washington	Washington		38.89511	-77.03637	P	PPLC	US		DC				601723			America/New_York	2023-01-01
+1880252	Singapore	Singapore		1.28967	103.85007	P	PPLC	SG						5183700			Asia/Singapore	2023-01-01
+2521280	Mbabane	Mbabane		-26.31667	31.13333	P	PPLC	SZ						94874			Africa/Mbabane	2023-01-01
+2657896	Zurich	Zurich		47.36667	8.55	P	PPLA	CH						402762			Europe/Zurich	2023-01-01
+5368361	Los Angeles	Los Angeles		34.05223	-118.24368	P	PPL	US		CA				3820914			America/Los_Angeles	2023-01-01
+5391959	San Francisco	San Francisco		37.77493	-122.41942	P	PPL	US		CA				827526			America/Los_Angeles	2023-01-01
+4560349	Philadelphia	Philadelphia		39.95238	-75.16362	P	PPL	US		PA				1573916			America/New_York	2023-01-01
+5506956	Las Vegas	Las Vegas		36.17497	-115.13722	P	PPL	US		NV				641903			America/Los_Angeles	2023-01-01
+1275339	Mumbai	Mumbai		19.07283	72.88261	P	PPL	IN		16				12691836			Asia/Kolkata	2023-01-01
+1264527	Chennai	Chennai		13.08784	80.27847	P	PPL	IN		25				4681087			Asia/Kolkata	2023-01-01
+1816670	Beijing	Beijing		39.9075	116.39723	P	PPL	CN		22				18960744			Asia/Shanghai	2023-01-01
+1566083	Ho Chi Minh City	Ho Chi Minh City		10.82302	106.62965	P	PPL	VN		79				14002598			Asia/Ho_Chi_Minh	2023-01-01

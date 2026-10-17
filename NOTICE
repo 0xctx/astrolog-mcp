@@ -1,0 +1,61 @@
+Notices for third-party software and data
+
+astrolog-mcp, Copyright (C) 2026 0xctx, is licensed under the GNU Affero General Public License,
+version 3 (see LICENSE). That licence covers the astrolog-mcp source code only. The Docker image and the
+installer also bring in the components below, each under its own licence.
+
+Astrolog 8.00
+  The installer downloads the Astrolog source from its official release, checks its SHA-256 and builds it
+  without X11. Astrolog is licensed under the GNU General Public License (version 2 or, at your option, any later version, per the release's
+  license.htm). Source: https://github.com/CruiserOne/Astrolog. The binary is not committed to this repository.
+  Distributing the Astrolog binary, for example inside an image, carries the obligations of GPL version 2,
+  which include making the corresponding source code available (GPL version 2, section 3).
+  The credits in the release's astrolog.h, unchanged:
+
+    ** IMPORTANT NOTICE: Astrolog and all chart display routines and anything
+    ** not enumerated below used in this program are Copyright (C) 1991-2026 by
+    ** Walter D. Pullen (Astara@msn.com, http://www.astrolog.org/astrolog.htm).
+    ** Permission is granted to freely use, modify, and distribute these
+    ** routines provided these credits and notices remain unmodified with any
+    ** altered or distributed versions of the program.
+    **
+    ** The main ephemeris databases and calculation routines are from the
+    ** library SWISS EPHEMERIS and are programmed and copyright 1997-2008 by
+    ** Astrodienst AG. Use of that source code is subject to license for Swiss
+    ** Ephemeris Free Edition at https://www.astro.com/swisseph/swephinfo_e.htm.
+    ** This copyright notice must not be changed or removed by any user of this
+    ** program.
+    **
+    ** Additional ephemeris databases and formulas are from the calculation
+    ** routines in the program PLACALC and are programmed and Copyright (C)
+    ** 1989,1991,1993 by Astrodienst AG and Alois Treindl (alois@astro.ch). The
+    ** use of that source code is subject to regulations made by Astrodienst
+    ** Zurich, and the code is not in the public domain. This copyright notice
+    ** must not be changed or removed by any user of this program.
+
+Swiss Ephemeris
+  The installer downloads the Swiss Ephemeris data files (*.se1) from aloistr/swisseph and checks each one
+  against its pinned commit. Source: https://www.astro.com/swisseph/swephinfo_e.htm.
+  The licence page says Swiss Ephemeris "is made available by its authors under a dual licensing system"
+  and that the developer "must choose between one of the two license models, which are a) GNU Affero General Public License (AGPL) b) Swiss Ephemeris Professional License". The timing clause reads:
+  "The choice must be made before the software developer distributes software containing parts of Swiss Ephemeris to others, and before any public service using the developed software is activated."
+  The AGPL option: "he or she must fulfill the conditions of that license, which includes the obligation
+  to place his or her whole software project under the AGPL or a compatible license."
+  The Professional option: "purchase the Swiss Ephemeris Professional Edition from Astrodienst and sign
+  the corresponding license contract."
+  On that wording, a public endpoint that runs this software can be a "public service using the developed
+  software", so the choice applies before the endpoint is activated, not only before an image is published.
+  Whether a given service is a public service is for the operator to decide.
+  This repository's own code is licensed under the AGPL (see LICENSE). See docs/licensing.md.
+
+GeoNames
+  The place lookup uses GeoNames data: cities500 (cities500.txt), admin1CodesASCII.txt and
+  countryInfo.txt.
+  Source: https://www.geonames.org/
+  Licence: Creative Commons Attribution 4.0 (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+  Credit: GeoNames asks for credit with a link or another reference to GeoNames when its data is used;
+  the GeoNames export page is https://www.geonames.org/export/.
+  The installer downloads these files into the data directory. This repository does not contain
+  them. The committed sample data in data/fixtures is hand-written for tests and is not GeoNames data.
+  The city list that Astrolog 8.00 installs, atlas.as, is composed from GeoNames data. Its header says:
+  "Atlas composed May 14, 2026 using data from: https://www.geonames.org/" and "This work is licensed under a Creative Commons Attribution 4.0 License", and that Astrolog's processing and use of this data is still under Astrolog's GPL license.
